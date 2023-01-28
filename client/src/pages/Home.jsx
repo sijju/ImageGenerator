@@ -19,7 +19,7 @@ const Home = () => {
         const fetchPosts = async () =>{
           setLoading(true)
           try {
-            const res = await fetch('http://localhost:8080/api/post',{
+            const res = await fetch('https://picai.onrender.com/api/post',{
                 method : 'GET',
                 headers : { 'Content-Type' : 'application/json' },
             })
