@@ -18,7 +18,7 @@ const CreatePost = () => {
      if(form.prompt && form.photo){
       setLoading(true)
       try{
-        const res = await fetch('http://localhost:8080/api/post',{
+        const res = await fetch('https://picai.onrender.com/api/post',{
           method : 'POST',
           headers :{
             'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const CreatePost = () => {
      if(form.prompt){
       try {
         setGeneratingImg(true);
-        const res = await fetch('http://localhost:8080/api/ai',{
+        const res = await fetch('https://picai.onrender.com/api/ai',{
           method:'POST',
           headers :{
             'Content-Type': 'application/json',
